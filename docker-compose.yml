@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+    streamlit:
+        container_name: test
+        build:
+            context: .
+        ports:
+            - "4200:4200"
+        networks:
+            - test
+
+
+networks: 
+    test:
+            
